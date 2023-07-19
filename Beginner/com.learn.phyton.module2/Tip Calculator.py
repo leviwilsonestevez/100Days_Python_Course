@@ -1,0 +1,8 @@
+print("Welcome to the tip calculator")
+bill=input("What was the total bill ?\n")
+percentage_propine=input("What percent tip  you like to give to the waiver ?\n")
+split_number=input("How many people split the bill?\n")
+total_bill=float(bill)+(float(bill)*float(percentage_propine))
+cost_per_person=total_bill/int(split_number)
+cost_per_person="{:.2f}".format(cost_per_person)
+print(f"Each person should pay ${cost_per_person}")
